@@ -5,7 +5,7 @@ It also only compiles the .c files if changes are made, therefore not recompilin
   
 ## Setup
 The only input needed from you is to open the compile.bat file and change the variables
-- lccDir : The directory to lcc.exe in GBDK2020
+- lccDir : The directory to lcc.exe in GBDK2020 (eg `..\..\gbdk-win\gbdk\bin\lcc.exe`)
 - exportName : The name of the exported rom; [name].gb
 ##
 You'll also need to setup the c/c++ properties to direct to the GBDK2020 include folder!
