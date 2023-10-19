@@ -1,12 +1,13 @@
-A template GBDK2020 project. 
+#  A template GBDK2020 project
 
-(Windows) Use compile.bat to easily compile the entire project automatically. Automatically scans for .c files and compiles them to asm/.o files.
-Only compiles .c files that have changed, doesn't recompile .c files that haven't changed since the last build
-
+(For windows) compile.bat makes compilation of GBDK2020 projects much easier, as it automaically scans for .c files and compiles them to asm files.
+It also only compiles the .c files if changes are made, therefore not recompiling those huge maps every single time!
+  
+## Setup
 The only input needed from you is to open the compile.bat file and change the variables
-- exportName    : The name of the exported rom
-- lccDir        : The directory to lcc.exe in GBDK2020
+- lccDir : The directory to lcc.exe in GBDK2020
+- exportName : The name of the exported rom; [name].gb
+##
+You'll also need to setup the c/c++ properties to direct to the GBDK2020 include folder!
 
-
-For a complete recompile of everything (a cleanup), delete the directory /out/asm/ and delete src_hashes.txt
-
+### For a complete recompile of everything (a cleanup), delete the directory `/out/asm/` and delete `src_hashes.txt`
