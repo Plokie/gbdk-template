@@ -24,7 +24,6 @@ for /r %%i in (*) do (
     )
 )
 
-echo %currentPath%%lccDir%
 if not exist %currentPath%%lccDir% (
     echo Could not find lcc.exe at directory %lccDir%
     echo Make sure to edit the compile.bat file and set lccDir to the path of GBDK's lcc executable
