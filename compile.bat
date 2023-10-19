@@ -22,6 +22,11 @@ for /r %%i in (*) do (
         set ff=!ff:%currentPath%=!
         set sourcefiles=!sourcefiles! !ff!
     )
+    if %%~xi == .s (
+        set ff=%%i
+        set ff=!ff:%currentPath%=!
+        set sourcefiles=!sourcefiles! !ff!
+    )
 )
 
 if not exist %currentPath%%lccDir% (
