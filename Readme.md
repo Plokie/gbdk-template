@@ -9,3 +9,4 @@ The only input needed from you is to open the compile.bat file and change the va
 
 
 For a complete recompile of everything (a cleanup), delete the directory /out/asm/ and delete src_hashes.txt
+
