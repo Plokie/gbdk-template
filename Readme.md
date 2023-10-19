@@ -6,3 +6,6 @@ Only compiles .c files that have changed, doesn't recompile .c files that haven'
 The only input needed from you is to open the compile.bat file and change the variables
 - exportName    : The name of the exported rom
 - lccDir        : The directory to lcc.exe in GBDK2020
+
+
+For a complete recompile of everything (a cleanup), delete the directory /out/asm/ and delete src_hashes.txt
