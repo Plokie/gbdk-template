@@ -8,11 +8,9 @@ setlocal EnableDelayedExpansion
 set exportName=game
 
 @REM The path to the lcc.exe of gbdk2020
-set lccDir=..\..\gbdk-win\gbdk\bin\lcc
+set lccDir=..\..\gbdk-win\gbdk\bin\lcc.exe
 
 @REM ---------------------------------------
-
-
 
 
 set ff=
@@ -24,6 +22,14 @@ for /r %%i in (*) do (
         set ff=!ff:%currentPath%=!
         set sourcefiles=!sourcefiles! !ff!
     )
+)
+
+echo %currentPath%%lccDir%
+if not exist %currentPath%%lccDir% (
+    echo Could not find lcc.exe at directory %lccDir%
+    echo Make sure to edit the compile.bat file and set lccDir to the path of GBDK's lcc executable
+
+    EXIT /B 0
 )
 
 if not exist "%currentPath%/out/" mkdir "%currentPath%/out/"
